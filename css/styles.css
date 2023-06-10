@@ -551,6 +551,7 @@ img {
 .modal {
 	width: 408px;
 	min-height: 584px;
+	padding: 72px 24px 136px;
 	background-color: var(--modal-bg);
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -609,4 +610,78 @@ img {
 
 .backdrop.is-hidden .modal {
 	transform: translate(-50%, -50%) scaleY(3);
+}
+
+.form__header {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--accent-dark);
+}
+
+.form {
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.form__lable {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	position: relative;
+}
+
+.form__lable > span {
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	color: var(--light-slate);
+}
+
+.form__input {
+	width: 360px;
+	height: 40px;
+	border: 1px solid rgba(46, 47, 66, 0.4);
+	border-radius: 4px;
+	padding-left: 38px;
+	transition: border-color 250ms var(--animation-func);
+}
+
+.form__icon {
+	position: absolute;
+	left: 16px;
+	bottom: 8px;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+	border-color: var(--color-accent);
+	outline: none;
+}
+
+.form__input:focus-within .form__icon {
+	fill: var(--color-accent);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form__textarea {
+	width: 360px;
+	height: 120px;
+	border: 1px solid rgba(46, 47, 66, 0.4);
+	border-radius: 4px;
+	resize: none;
+	padding-left: 16px;
+	padding-top: 8px;
+	transition: border-color 250ms var(--animation-func);
+}
+
+.form__textarea::placeholder {
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	color: rgba(46, 47, 66, 0.4);
 }
