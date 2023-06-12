@@ -614,7 +614,7 @@
 			</div>
 		</footer>
 		<div
-			class="backdrop"
+			class="backdrop is-hidden"
 			data-modal>
 			<div class="modal">
 				<button
@@ -630,12 +630,8 @@
 				<p class="form__header">
 					Leave your contacts and we will call you back
 				</p>
-				<form
-					class="form"
-					class="form">
-					<label
-						class="form__lable"
-						for="name">
+				<form class="form">
+					<label class="form__label">
 						<span>Name</span>
 						<input
 							type="text"
@@ -649,12 +645,10 @@
 							<use href="./images/icons.svg#icon-person"></use>
 						</svg>
 					</label>
-					<label
-						class="form__lable"
-						for="phone">
+					<label class="form__label">
 						<span>Phone</span>
 						<input
-							type="text"
+							type="tel"
 							required
 							name="phone"
 							class="form__input" />
@@ -665,9 +659,7 @@
 							<use href="./images/icons.svg#icon-phone"></use>
 						</svg>
 					</label>
-					<label
-						class="form__lable"
-						for="email">
+					<label class="form__label">
 						<span>Email</span>
 						<input
 							type="email"
@@ -681,17 +673,39 @@
 							<use href="./images/icons.svg#icon-email"></use>
 						</svg>
 					</label>
-					<label
-						class="form__lable"
-						for="comment">
+					<label class="form__label label__textarea">
 						<span>Comment</span>
 						<textarea
 							name="comment"
 							placeholder="Text input"
 							class="form__textarea"></textarea>
 					</label>
-					<input type="checkbox" />
-					<button type="submit">Send</button>
+					<label class="label__checkbox">
+						<input
+							class="form__checkbox"
+							required
+							type="checkbox" />
+						<div>
+							<svg
+								width="10"
+								height="8">
+								<use href="./images/icons.svg#icon-check"></use>
+							</svg>
+						</div>
+						<span>
+							I accept the terms and conditions of the
+							<a
+								class="terms__link"
+								href=""
+								>Privacy Policy</a
+							>
+						</span>
+					</label>
+					<button
+						class="btn form__button"
+						type="submit">
+						Send
+					</button>
 				</form>
 			</div>
 		</div>
