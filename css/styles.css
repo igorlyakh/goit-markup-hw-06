@@ -622,10 +622,13 @@ img {
 	margin-bottom: 16px;
 }
 
-.form__label {
+.form__wrapper {
 	display: block;
 	margin-bottom: 8px;
 	position: relative;
+}
+
+.form__label {
 	cursor: pointer;
 }
 
