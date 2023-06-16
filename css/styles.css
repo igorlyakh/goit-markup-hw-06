@@ -711,6 +711,7 @@ img {
 	top: 50%;
 	transform: translateY(-50%);
 	left: 16px;
+	fill: var(--accent-dark);
 	transition: fill 250ms var(--animation-func);
 }
 
@@ -721,7 +722,6 @@ img {
 
 .form__input:focus + .form__icon {
 	fill: var(--color-accent);
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .textarea__wrapper {
@@ -778,6 +778,10 @@ img {
 	justify-content: center;
 	align-items: center;
 	fill: transparent;
+}
+
+.input__policy:focus + .policy__label .checkbox {
+	border-color: var(--color-accent);
 }
 
 .input__policy:checked + .policy__label .checkbox {
